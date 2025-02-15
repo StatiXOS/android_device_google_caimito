@@ -14,6 +14,7 @@ $(call inherit-product, device/google/caimito/aosp_caiman.mk)
 # Parts
 $(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
 $(call inherit-product-if-exists, vendor/google/pixelparts/powershare/device.mk)
+$(call inherit-product-if-exists, vendor/google/pixelparts/face/face.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := statix_caiman
@@ -21,6 +22,6 @@ PRODUCT_MODEL := Pixel 9 Pro
 PRODUCT_BRAND := google
 PRODUCT_MANUFACTURER := Google
 
-PRODUCT_OVERRIDE_FINGEPRINT := "google/caiman/caiman:15/AP3A.241105.008/12485168:user/release-keys"
+PRODUCT_OVERRIDE_FINGEPRINT := "google/komodo/komodo:15/AP4A.241205.013/12621605:user/release-keys"
 
 BUILD_FINGERPRINT := $(PRODUCT_OVERRIDE_FINGEPRINT)
